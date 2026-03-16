@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useEffect } from 'react'
 import axios from 'axios'
-
+axios.defaults.baseURL = 'https://mathease-production.up.railway.app'
 const AuthContext = createContext(null)
 
 export function AuthProvider({ children }) {
